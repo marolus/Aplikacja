@@ -1,0 +1,15 @@
+listawyborow=['AO','MC','Chapman','SS','CetrymidAgar','ChromAgar']
+def pozywka(y):
+  for i in(range(len(y)):
+  print('Wybierz ', i, 'jeśli interesuje Cię ',y[i])
+  x=int(input())
+  if x>=0 and x<len(listawyborow):
+    print('Wybrałeś pożywkę ', y[x])
+  else:
+    print('Wybrałeś złą pożywkę.\nCzy chcesz spróbować ponownie? [T/n]: ')
+    k=input()
+    if k=='T':
+      pożywka(y)
+    else:
+      print('Zakańczam program')
+  return(x)
