@@ -19,13 +19,11 @@ barwa = ['biała','różowa', 'żółta','czarna','fioletowa']
 powierzchnia = ['chropowata','śluzowata']
 krawedz = ['postrzępiona','gładka']
 def charakterystyka_kolonii(b,k,p):
-  wybory=[]
-  r = 0
+  wybory=[] 
   for i in range(len(k)):
-    for i in range(len(p)):
-      for i in range(len(b)):
+    for j in range(len(p)):
+      for l in range(len(b)):
         print(r, k[i], p[j], b[l])
-        r+=1
         Wybory.append([k[i],p[j],b[l]])
 charakterystyka_kolonii(barwa, powierzchnia, krawedz)
 print('Wpisz wartość zaobserwowanej charakterystyki: ')
