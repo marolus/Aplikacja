@@ -6,7 +6,7 @@ def make_dict():
         if len(line) > 1:
             z = line.split()
             if z[0] != '':
-                slownik[z[0]] = z[1]
+                slownik[z[0]] = z[1:len(z)]
     return slownik
 print (make_dict())
 
